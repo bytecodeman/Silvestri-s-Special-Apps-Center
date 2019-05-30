@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.col-md-4 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: rgb(233, 236, 239);
+}
+
+section#apps {
+  margin-bottom: 30px;
+}
+
+section#apps h2, section#moreapps h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+section#apps .card {
+  display: block;
+  box-sizing: content-box;
+  margin: 9px;
+  overflow: hidden;
+}
+
+section#apps .card:hover {
+  margin: 0;
+  border: 10px solid rgba(0, 0, 0, 0.125);
+  background-color: #f1f1f1;
+}
+
+section#apps .card img {
+  max-height: 72px;
+  display: block;
+  margin: auto;
+}
+
+section#apps .card h4 {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+section#apps .card .AppDescription {
+  height: 100px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+section#moreapps {
+  padding: 20px 0;
+}
+
+section#moreapps {
+  background:#35424a;
+  color:#ffffff;
+}
+
+section#moreapps a {
+  color:#ffffff;
+  text-decoration:none;
+}
+
+section#moreapps a:hover{
+  color:#cccccc;
+}
+
+footer {
+  background-color: rgb(233, 236, 239);
+  height: 60px;
+  padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin-bottom: 60px;
+  }
+
+  .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
