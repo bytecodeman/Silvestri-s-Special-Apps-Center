@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') :
 	$tmpmin = (int)test_input($min);
 	$tmpmax = (int)test_input($max);
 	$tmpunique = test_input($unique) === "unique";
-    $tmpleadingZero = test_input($leadingZero) === "leadingZero";
+    $tmpleadingZero = test_input($leadingZero) === "leadingZero" ? 1 : 0;
     $showCaptCha = !isset($_POST["showCaptCha"]);   
     
     if ($expr !== $tmpexpr) :
