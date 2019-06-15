@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
 					<button type="submit" id="submit" name="submit" class="btn btn-primary btn-lg d-print-none" aria-label="Submit This Form">Submit</button>
                 </form>
                 <?php if (!empty($solution)): ?>
-                    <div role="alert" class="alert alert-success h4 font-weight-bold alert-dismissible fade show mt-4">
+                    <div id="solutionHeader" role="alert" class="alert alert-success h4 font-weight-bold alert-dismissible fade show mt-4">
                         Solutions Found!!!
 						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
@@ -283,7 +283,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])
 				return false;
 			}
 
-            $("#resultsTable").hide();
+            $("#solutionHeader, #resultsTable").hide();
             $("#submit").html('Please Wait <i class="fas fa-spinner fa-spin fa-lg ml-3"></i>').prop("disabled", true);
 			return true;
 		});
